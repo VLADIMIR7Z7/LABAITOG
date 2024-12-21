@@ -306,6 +306,10 @@ namespace AutoChessConsole
             GameManager gameManager = new GameManager();
             gameManager.SelectPlayerTeam();
             gameManager.StartBattle();
+
+            // Добавляем ожидание ввода от пользователя перед закрытием консоли
+            Console.WriteLine("Нажмите любую клавишу для выхода...");
+            Console.ReadKey();
         }
     }
 }
